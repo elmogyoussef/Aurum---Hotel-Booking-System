@@ -1,0 +1,825 @@
+/* =========================
+   LUXURY GOOGLE FONTS
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+background:#f8f6f2;
+color:#2c2c2c;
+line-height:1.7;
+letter-spacing:0.3px;
+}
+
+h1,h2,h3,h4{
+font-family:'Cormorant Garamond',serif;
+font-weight:700;
+letter-spacing:1px;
+}
+
+section{
+padding:70px 10%;
+}
+
+h2{
+text-align:center;
+font-size:50px;
+margin-bottom:50px;
+color:#111;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#111;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 3px 12px rgba(0,0,0,.15);
+}
+
+.nav-brand{
+font-family:'Cormorant Garamond',serif;
+font-size:38px;
+font-weight:700;
+letter-spacing:3px;
+color:#d4af37;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+.navbar ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:.3s;
+}
+
+.navbar ul li a:hover{
+color:#d4af37;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb")
+center/cover;
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.hero-content h1{
+font-size:78px;
+text-transform:uppercase;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:24px;
+font-style:italic;
+margin-bottom:30px;
+}
+
+.hero a{
+display:inline-block;
+margin-bottom:30px;
+text-decoration:none;
+background:#d4af37;
+color:#111;
+padding:14px 35px;
+border-radius:40px;
+font-weight:600;
+transition:.3s;
+}
+
+.hero a:hover{
+transform:translateY(-3px);
+background:#f2d675;
+}
+
+.hero form{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.hero input{
+padding:15px 20px;
+width:260px;
+border:none;
+border-radius:30px;
+outline:none;
+}
+
+.hero button{
+padding:15px 30px;
+border:none;
+border-radius:30px;
+background:#d4af37;
+color:#111;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.hero button:hover{
+background:#f2d675;
+}
+
+/* =========================
+ FEATURED HOTELS
+========================= */
+
+/* Airbnb Style Horizontal Cards */
+.hotel-card button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.hotel-card  button:hover {
+    background-color: #333;
+}
+.featured-hotels{
+padding:70px 10%;
+}
+
+.hotel-card{
+    display:flex;
+    align-items:center;
+    gap:30px;
+
+    background:white;
+    padding:20px;
+    margin:30px auto;
+
+    max-width:1000px;
+
+    border-radius:20px;
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.hotel-card:hover{
+transform:translateY(-5px);
+}
+
+.hotel-card img{
+width:350px;
+height:230px;
+object-fit:cover;
+border-radius:18px;
+}
+
+.hotel-info{
+flex:1;
+text-align:left;
+}
+
+.hotel-info h3{
+font-size:36px;
+margin-bottom:15px;
+}
+
+.hotel-info p{
+margin:10px 0;
+font-size:18px;
+}
+
+.hotel-info button{
+margin-top:20px;
+padding:12px 28px;
+border:none;
+border-radius:30px;
+background:#111;
+color:white;
+cursor:pointer;
+transition:.3s;
+}
+
+.hotel-info button:hover{
+background:#d4af37;
+color:#111;
+}
+
+/* Mobile */
+@media(max-width:900px){
+
+.hotel-card{
+flex-direction:column;
+text-align:center;
+}
+
+.hotel-info{
+text-align:center;
+}
+
+.hotel-card img{
+width:100%;
+height:250px;
+}
+
+}
+/* =========================
+ SERVICES
+========================= */
+
+.services{
+text-align:center;
+}
+
+.service-item{
+display:inline-block;
+width:260px;
+background:white;
+padding:30px 20px;
+margin:15px;
+border-radius:18px;
+box-shadow:0 6px 20px rgba(0,0,0,.06);
+transition:.3s;
+}
+
+.service-item:hover{
+transform:translateY(-5px);
+}
+
+.service-item h3{
+font-size:30px;
+margin-bottom:15px;
+}
+
+/* =========================
+ SPECIAL OFFERS
+========================= */
+
+.special-offers{
+text-align:center;
+}
+
+.offer-item{
+background:#111;
+color:white;
+width:70%;
+margin:auto;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.offer-item h3{
+color:#d4af37;
+font-size:38px;
+margin-bottom:15px;
+}
+
+mark{
+background:#d4af37;
+padding:4px 10px;
+border-radius:8px;
+}
+.page-banner{
+text-align:center;
+padding:120px 10%;
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("https://images.unsplash.com/photo-1566073771259-6a8506099945")
+center/cover;
+color:white;
+}
+
+.page-banner h1{
+font-size:70px;
+margin-bottom:20px;
+}
+
+.page-banner p{
+font-size:22px;
+font-style:italic;
+}
+
+
+/* =========================
+ FILTER BAR
+========================= */
+
+.filter-wrapper{
+margin-top:-50px;
+display:flex;
+justify-content:center;
+padding:0 8%;
+}
+
+.search-filter-bar{
+background:white;
+padding:30px;
+border-radius:22px;
+box-shadow:0 10px 35px rgba(0,0,0,.1);
+
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+align-items:end;
+max-width:1300px;
+}
+
+.filter-group{
+display:flex;
+flex-direction:column;
+min-width:180px;
+}
+
+.filter-group label{
+margin-bottom:8px;
+font-weight:600;
+}
+
+.filter-group input,
+.filter-group select{
+padding:13px;
+border:1px solid #ddd;
+border-radius:12px;
+outline:none;
+}
+
+.luxury-search-btn{
+padding:14px 30px;
+border:none;
+border-radius:30px;
+background:#d4af37;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.luxury-search-btn:hover{
+transform:translateY(-3px);
+background:#ebca5f;
+}
+.hotel-card{
+display:flex;
+align-items:center;
+gap:30px;
+
+background:white;
+padding:20px;
+margin:35px auto;
+max-width:1100px;
+
+border-radius:22px;
+box-shadow:0 8px 30px rgba(0,0,0,.08);
+
+transition:.3s;
+}
+
+.hotel-card:hover{
+transform:translateY(-7px);
+}
+
+.hotel-card img{
+width:360px;
+height:240px;
+object-fit:cover;
+border-radius:18px;
+}
+
+.hotel-info{
+flex:1;
+}
+
+.badge{
+background:#d4af37;
+padding:8px 15px;
+border-radius:20px;
+font-size:14px;
+font-weight:600;
+display:inline-block;
+margin-bottom:18px;
+}
+
+.hotel-info h3{
+font-size:42px;
+margin-bottom:15px;
+}
+
+.hotel-info p{
+margin:8px 0;
+font-size:18px;
+}
+
+.hotel-info h4{
+font-size:30px;
+margin-top:15px;
+}
+
+.hotel-info button{
+margin-top:20px;
+padding:12px 30px;
+border:none;
+border-radius:30px;
+background:#111;
+color:white;
+cursor:pointer;
+font-weight:600;
+transition:.3s;
+}
+
+.hotel-info button:hover{
+background:#d4af37;
+color:#111;
+}
+/* =========================
+ TESTIMONIALS
+========================= */
+
+.reviews{
+text-align:center;
+}
+
+.reviews-card{
+background:white;
+width:65%;
+margin:25px auto;
+padding:30px;
+border-radius:18px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+font-size:18px;
+}
+
+/* =========================
+ FOOTER
+========================= */
+
+.main-footer {
+    background: #111;
+    color: white;
+    padding: 60px 10%;
+    margin-top: 0;
+}
+
+.footer-section {
+    margin-bottom: 30px;
+}
+
+.footer-section h4 {
+    color: #d4af37;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a,
+.footer-section a {
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+
+.footer-section a:hover {
+    color: #d4af37;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    text-align: center;
+}
+
+/* =========================
+ HORIZONTAL LINES
+========================= */
+
+hr{
+border:none;
+height:1px;
+background:#ddd;
+margin-bottom:50px;
+}
+
+/* =========================
+ RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+.navbar{
+flex-direction:column;
+padding:20px;
+}
+
+.navbar ul{
+flex-direction:column;
+gap:15px;
+margin-top:20px;
+text-align:center;
+}
+
+.hero-content h1{
+font-size:50px;
+}
+
+.hero-content p{
+font-size:20px;
+}
+
+.hotel-card,
+.testimonial-card,
+.offer-item{
+width:95%;
+}
+
+.service-item{
+width:90%;
+}
+
+.hero input{
+width:90%;
+}
+/* =========================
+   SEARCH + FILTER BAR
+========================= */
+
+.filter-wrapper {
+    padding: 0 10%;
+    margin-top: -50px; /* Pulls it up into the Hero section for that modern look */
+    position: relative;
+    z-index: 10;
+}
+
+.search-filter-bar {
+    background: white;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    gap: 20px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 150px;
+}
+
+.filter-group label {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #0f172a;
+}
+
+.filter-group input, 
+.filter-group select {
+    border: 1px solid #e2e8f0;
+    padding: 12px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #475569;
+    outline: none;
+    transition: 0.3s;
+}
+
+.filter-group input:focus {
+    border-color: #38bdf8;
+}
+
+.luxury-search-btn {
+    background: #0f172a;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s;
+    height: 50px; /* Match height of inputs */
+}
+
+.luxury-search-btn:hover {
+    background: #38bdf8;
+    transform: translateY(-2px);
+}
+.page-banner{
+text-align:center;
+padding:120px 10%;
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("https://images.unsplash.com/photo-1566073771259-6a8506099945")
+center/cover;
+color:white;
+}
+
+.page-banner h1{
+font-size:70px;
+margin-bottom:20px;
+}
+
+.page-banner p{
+font-size:22px;
+font-style:italic;
+}
+
+
+/* =========================
+ FILTER BAR
+========================= */
+
+.filter-wrapper{
+margin-top:-50px;
+display:flex;
+justify-content:center;
+padding:0 8%;
+}
+
+.search-filter-bar{
+background:white;
+padding:30px;
+border-radius:22px;
+box-shadow:0 10px 35px rgba(0,0,0,.1);
+
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+align-items:end;
+max-width:1300px;
+}
+
+.filter-group{
+display:flex;
+flex-direction:column;
+min-width:180px;
+}
+
+.filter-group label{
+margin-bottom:8px;
+font-weight:600;
+}
+
+.filter-group input,
+.filter-group select{
+padding:13px;
+border:1px solid #ddd;
+border-radius:12px;
+outline:none;
+}
+
+.luxury-search-btn{
+padding:14px 30px;
+border:none;
+border-radius:30px;
+background:#d4af37;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.luxury-search-btn:hover{
+transform:translateY(-3px);
+background:#ebca5f;
+}
+
+
+/* =========================
+ HOTEL LISTINGS
+========================= */
+
+.hotel-listings{
+padding:80px 10%;
+}
+
+/* Horizontal Airbnb cards */
+
+.hotel-card{
+display:flex;
+align-items:center;
+gap:30px;
+
+background:white;
+padding:20px;
+margin:35px auto;
+max-width:1100px;
+
+border-radius:22px;
+box-shadow:0 8px 30px rgba(0,0,0,.08);
+
+transition:.3s;
+}
+
+.hotel-card:hover{
+transform:translateY(-7px);
+}
+
+.hotel-card img{
+width:360px;
+height:240px;
+object-fit:cover;
+border-radius:18px;
+}
+
+.hotel-info{
+flex:1;
+}
+
+.badge{
+background:#d4af37;
+padding:8px 15px;
+border-radius:20px;
+font-size:14px;
+font-weight:600;
+display:inline-block;
+margin-bottom:18px;
+}
+
+.hotel-info h3{
+font-size:42px;
+margin-bottom:15px;
+}
+
+.hotel-info p{
+margin:8px 0;
+font-size:18px;
+}
+
+.hotel-info h4{
+font-size:30px;
+margin-top:15px;
+}
+
+.hotel-info button{
+margin-top:20px;
+padding:12px 30px;
+border:none;
+border-radius:30px;
+background:#111;
+color:white;
+cursor:pointer;
+font-weight:600;
+transition:.3s;
+}
+
+.hotel-info button:hover{
+background:#d4af37;
+color:#111;
+}
+
+
+}
